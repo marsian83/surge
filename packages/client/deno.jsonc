@@ -1,0 +1,38 @@
+{
+  "tasks": {
+    "dev": "vite",
+    "dev:ssr": "deno run -A server.ts",
+    "build": "tsc -b && vite build",
+    "build-unsafe": "vite build",
+    "preview": "vite preview"
+  },
+  "imports": {
+    "autoprefixer": "npm:autoprefixer@^10.4.20",
+    "privy": "npm:@privy-io/react-auth@^1.92.6",
+    "tailwindcss": "npm:tailwindcss",
+    "tailwind-merge": "npm:tailwind-merge@^2.5.4",
+    "tailwindcss-motion": "npm:tailwindcss-motion@^0.4.1-beta",
+    "lucide-preact": "npm:lucide-preact",
+    "vaul": "npm:vaul@^1.1.1",
+
+    "viem": "npm:viem@^2.21.40",
+
+    "@radix-ui/react-avatar": "npm:@radix-ui/react-avatar@^1.1.1",
+    "@radix-ui/react-form": "npm:@radix-ui/react-form@^0.1.0",
+    "@radix-ui/react-accordion": "npm:@radix-ui/react-accordion@^1.2.1",
+    "@radix-ui/react-select": "npm:@radix-ui/react-select@^2.1.2",
+    "@radix-ui/react-accessible-icon": "npm:@radix-ui/react-accessible-icon@^1.1.0",
+
+    "vite": "npm:vite@^5.4.10",
+    "preact": "npm:preact@^10.24.3",
+    "@preact/signals": "npm:@preact/signals",
+    "preact-iso": "npm:preact-iso@^2.8.1",
+    "react": "npm:@preact/compat",
+    "react-dom": "npm:@preact/compat",
+
+    // Babel Dependencies
+    "babel-plugin-transform-hook-names": "npm:babel-plugin-transform-hook-names",
+    "@babel/plugin-transform-react-jsx-development": "npm:@babel/plugin-transform-react-jsx-development"
+  },
+  "exclude": [".vite", "dev-dist", "./postcss.config.cjs"]
+}
